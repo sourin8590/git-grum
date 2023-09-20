@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #a1a1b1;
+    background-image: linear-gradient(315deg, #81819b, #e4e4e474);
+    font-family: "Mooli", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+}
+
+input {
+    background-color: #141315;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 05px 1px rgba(154, 160, 185, 0.05), 5px 4px rgba(101, 102, 104, 0.1);
+    border: none;
+    color: rgb(249, 246, 246);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #626166;
+    background-image: linear-gradient(315deg, #4c2885, #4c11ac, 100%);
+    box-shadow: 5px 5px rgba(189, 189, 192, 0.05), 5px 4px rgba(188, 179, 179, 0.1);
+    display: flex;
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.info {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.avatar {
+    border: 10px solid #747481;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-infoh2 {
+    margin-top: 0;
+}
+
+.user-infoliul {
+    display: flex;
+    align-items: center;
+}
+
+.user-infoul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-infoullistrong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: #28282a;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+}
+
+.repo:hover {
+    background-color: #363638;
+}
+
+.footer {
+    color: rgb(6, 5, 4);
+    font-weight: bold;
+}
+
+.text-main {
+    text-decoration: none;
+    color: rgb(6, 5, 4);
+    border: 1px solid rgb(6, 5, 4);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.text-main:hover {
+    color: #2a2a72;
+    background-color: #bbb;
+    border-color: #bbb;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar {
+        margin-top: 1rem;
+    }
+
+    .user-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #search {
+        margin-top: 30px;
+    }
+}
